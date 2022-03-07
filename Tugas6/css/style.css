@@ -1,0 +1,20 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+.tabel {
+    background-color: rgb(255, 255, 255);
+}
+.tombol{
+    background-color: lightblue;
+   }
+.tabel thead{
+    background-color: rgb(1, 206, 155);
+    margin: 10px;
+    padding: 10px;
+   }
+
+.tabel tfoot{
+    background-color:rgb(1, 206, 155);
+    margin: 10px;
+    padding: 10px;
+   }
