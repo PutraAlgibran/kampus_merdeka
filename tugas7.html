@@ -1,0 +1,49 @@
+<script>
+    class Gempa {
+        // variabel & konstruktor
+        constructor (lokasi, skala){
+            this.lokasi = lokasi;
+            this.skala = skala;
+        }
+
+        // fungsi dampak
+        dampak(){
+
+            let pengaruh;
+            if (this.skala <=2) pengaruh = "Dampaknya Tidak Terasa";
+            else if (this.skala < 5 && this.skala > 2) pengaruh = "Dampaknya Bangunan Retak-Retak";
+            else if (this.skala < 7 && this.skala > 4) pengaruh = "Dampaknya Bangunan Roboh";
+            else pengaruh = "Dampaknya Bangunan Roboh dan Berpotensi Tsunami";
+
+            document.write(`Asal Gempa : ${this.lokasi}
+            <br/> Skala : ${this.skala}
+            <br/> Dampak : ${pengaruh}
+            <hr/>`)
+        }
+
+    }
+
+    // tempat gempa
+    let italy = new Gempa ('Roma', 4);
+    let jepang = new Gempa ('Tokyo', 7);
+    let usa = new Gempa ('Orlando', 8);
+    let canada = new Gempa ('Ohio', 5);
+    let rusia = new Gempa ('Moscow', 3);
+    let indonesia = new Gempa ('Jakarta', 4);
+    let malaysia = new Gempa ('Kuala Lumpur', 6);
+    let turki = new Gempa ('Istanbul', 2);
+    let uk = new Gempa ('Manchester', 2);
+    let spanyol = new Gempa ('madrid', 5);
+
+    italy.dampak();
+    jepang.dampak();
+    usa.dampak();
+    canada.dampak();
+    rusia.dampak();
+    indonesia.dampak();
+    malaysia.dampak();
+    turki.dampak();
+    uk.dampak();
+    spanyol.dampak();
+
+</script>
